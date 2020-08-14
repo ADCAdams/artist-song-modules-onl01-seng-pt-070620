@@ -1,6 +1,7 @@
 require 'pry'
 require_relative '../lib/concerns/memorable'
 require_relative '../lib/concerns/findable'
+require_relative '../lib/concerns/paramable'
 
 class Song
   
@@ -36,7 +37,7 @@ class Song
     @artist = artist
   end
 
-  def to_param
-    name.downcase.gsub(' ', '-')
-  end
+  # def to_param
+  #   name.downcase.gsub(' ', '-')
+  # end
 end
